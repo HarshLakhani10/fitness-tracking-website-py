@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    padding-top: 75px;
+}
+nav{
+    display: block;
+    color: white;
+    top: 0;
+    width: 1476px;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-color: black;
+    z-index: 9999;
+}
+nav .navlogo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+}
+nav .navlogo p:hover{
+    color: gray;
+    transition-duration: 0.4s;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0px 30px;
+    font-size: 18px;
+}
+nav li a:hover{
+    color: gray;
+    transition-duration: 0.4s;
+}
+
+.homebgvideo video{
+    position: fixed;
+    z-index: -1;
+    opacity: 0.5;
+    width: 1476px;
+    overflow: hidden;
+}
+.homebgimg {
+    position: absolute;
+    padding-left: 120px;
+    padding-top: 90px;
+    z-index: 1;
+
+}
+.homebgimg img {
+    height: 570px;
+    width: 500px;
+}
+#homecontenthead{
+    position: absolute;
+    color: rgb(70, 68, 68);
+    font-size: 80px;
+    padding-left: 690px;
+    padding-top: 130px;
+}
+#homecontentcontent{
+    position: absolute;
+    color: rgb(70, 68, 68);
+    font-size: 30px;
+    padding-left: 690px;
+    padding-top: 240px;
+}
+.flashes{
+    size: 20px;
+    position: absolute;
+}
+/* Dhruv css Code */
+
+footer{
+    padding-top: 660px;
+    width: 1476px;
+    
+}
+
+.main-content{
+    color: grey;
+    background-color: black;
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before{
+    position:absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content:after{
+    position: absolute;
+    content:'';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+
+}
+
+.left .content .social a{
+    padding: 0 20px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover{
+    background: #f12020;
+}
+
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover{
+    background: #f12020;
+}
+
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 10px 0;
+}
+
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg{
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+    width: 60%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input:focus, 
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+
+.right form .btn{
+    margin-top: 10px;
+}
+
+.right form .btn button{
+    height: 40px;
+    width: 60%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    color: #fff;
+}
+
+.right form .btn button:hover{
+    background: #219ebc;
+}
+
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+    color: #fff;
+}
+
+.bottom center span{
+    color: #fff;
+}
+
+.bottom center a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom center a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
+.menu_container{
+    padding-top: 10px;
+    background-color: #4f4e4e;
+}
+.menu_excercise_heading {
+    font-weight: 450;
+    padding-left: 25px;
+    background-color: #4f4e4e;
+    font-size: 45px;
+    color: black;
+    margin: 15px 25px;
+    padding: 15px;    
+}
+.column {
+    float: left;
+    position: relative;
+    width: 441.6px;
+    padding: 5px;
+    margin: 0px 25px;
+  }
+.column img{
+    display: block;
+    border-radius: 10%;
+    border: #151515 solid 1px;
+    height: 288px;
+} 
+.column:hover .overlay {
+    opacity: 1;
+  }
+   
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 40px;
+    border-radius: 10%;
+    width: 431.6px;
+    padding-top: 104px;
+    text-align: center;
+    height: 288px;
+    margin-bottom: 5px;
+  }
+  /*data entry css  */
+#displayInage{
+    background-color: #151515;
+}
+#displayImage img{
+    opacity: 0.4;
+    width: 1476px;
+}
+#headTitle {
+    margin-top: -944px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 60px;
+}
+#dataDisplay{
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+#dateLabel {
+    position: absolute;
+    margin-left: 40px;
+    font-size: 30px;
+}
+#weightLabel {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 30px;
+}
+#weight{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+#cdate{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    position: absolute;
+}
+#dataentrySubmit {
+    margin-top: 80px;
+    margin-left: 40px;
+    position: absolute;
+    padding: 5px;
+    font-size: 20px;
+}
+#dataentryform {
+    opacity: 0.6;
+}
+#progressbutton {
+    margin-top: 130px;
+    margin-left: 40px;
+    position: absolute;
+    padding: 5px;
+    font-size: 20px;
+    background-color: white;
+    border: black 1px solid;
+}
+#progressbutton a{
+    color: black;
+    text-decoration: none;
+}
