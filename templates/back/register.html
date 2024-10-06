@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for("static",filename="styles/style.css")}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navlogo">
+            <a href="{{url_for("index")}}"><p>MYFITNESSPROGRES</p></a>
+        </div>
+        <ul>
+            <li><a href="#Workouts">Workouts</a></li>
+            <li><a href="#Progress">Progress</a></li>
+            <li><a href="{{url_for("login")}}">Log in</a></li>
+            <li><a href="contact.html">About us</a></li>
+        </ul>
+    </nav>
+    <p>register page</p>
+    <br>
+    <form action="{{url_for("register")}}" method="post">
+        <label for="firstname">first name</label>
+        <br>
+        <input type="text" name="fname" id="firstname" required>
+        <br>
+        <label for="pass">pass word</label>
+        <br>
+        <input type="text" name="password" id="pass" required>
+        <br>
+        <button type="submit">submit</button>
+        </form>
+        <br>
+        <a href="{{url_for("login")}}">already have account login</a>
+</body>
+</html>
